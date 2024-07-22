@@ -1,0 +1,91 @@
+{
+  "name": "tatacliq",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/material": "^5.15.20",
+    "@mui/x-date-pickers": "^7.7.0",
+    "@reduxjs/toolkit": "^2.2.6",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "dayjs": "^1.11.11",
+    "dom": "^0.0.3",
+    "firebase": "^10.12.2",
+    "history": "^5.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.23.1",
+    "react-spinners": "^0.13.8",
+    "react-toastify": "^10.0.5",
+    "redux": "^5.0.1",
+    "swiper": "^11.1.4",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "CI= react-app-rewired build",
+    "test": "react-app-rewired test --transformIgnorePatterns \"node_modules/(?!axios)/\"   --coverage",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/react": "^16.0.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^27.5.1",
+    "jest-watch-typeahead": "^2.2.2",
+    "react-app-rewired": "^2.2.1",
+    "react-scripts": "^5.0.1",
+    "redux-mock-store": "^1.5.4",
+    "text-encoding": "^0.7.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "^swiper$": "<rootDir>/src/__mocks__/swiper.js",
+      "^swiper/(.*)$": "<rootDir>/src/__mocks__/swiper.js"
+    },
+    "maxWorkers": 1,
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testTimeout": 300000,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!src/jest.setup.js",
+      "!src/index.js",
+      "!src/reportWebVitals.js"
+    ]
+  }
+}
